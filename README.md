@@ -1,10 +1,10 @@
 ### How do you override `org.elasticsearch.client.FilterClient#FilterClient.doExecute()` in Scala?
 
-Specifically with `"org.elasticsearch" % "elasticsearch" % "2.4.x"` (it does work with later versions
-of ElasticSearch where `ActionRequest` no lnoger takes a parameter type, but we can't update to those
+Specifically with `"org.elasticsearch" % "elasticsearch" % "2.4.x"` (it does [work](https://travis-ci.org/guardian/elasticsearch-scala-client-test/jobs/330325344#L485) with later versions
+of ElasticSearch where `ActionRequest` no longer takes a parameter type, but we can't update to those
 just yet!).
 
-The naive attempt fails:
+The naive attempt [fails](https://travis-ci.org/guardian/elasticsearch-scala-client-test/jobs/330334281#L484):
 
 ```
 [info] Compiling 1 Scala source to /home/roberto/development/elasticsearch-scala-client-test/target/scala-2.11/classes ...
